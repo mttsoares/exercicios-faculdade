@@ -237,7 +237,7 @@ bool matricularAlunoEmTurma(ALUNO* aluno, TURMA* turma){
 Funcao para calcular a moda das notas de um aluno. A funcao deve retornar -1 caso o ponteiro para o aluno seja igual a NULL ou se o aluno ainda nao concluiu nenhuma turma de nenhuma disciplina. Caso contrario, a moda deve ser um valor inteiro de zero a 10 (ou seja, vocÃª deve considerar as notas atuais dos alunos [que valem de zero a cem] divididas por 10 (divisao inteira) para o calculo do valor mais frequente. Sempre que houver empate (duas ou mais notas ocorrendo o nÃºmero mÃ¡ximo de vezes) vocÃª deve considerar o valor mais alto como moda. A moda deve ser computada para todas as turmas que o aluno ja concluiu (isto eh, status igual a 'R' ou 'A').
 */
 int retornarModaDasNotasDeAluno(ALUNO* aluno){
-	if(aluno == NULL) return false; //Retorna falso para valores NULL em aluno.
+	if(aluno == NULL) return -1; //Retorna -1 para valores NULL em aluno.
 	int res = -1;
 	int notas[aluno->turmasNoHistorico];//Cria um array de notas de tamanho igual a quantidade de turmas no historico do aluno.
 	int freqNotas[11] = {0};//Cria um array de freqNotas com 11 posicoes, todas em zero. Cada posicao corresponde uma nota (0 a 10). 
