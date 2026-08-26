@@ -62,7 +62,7 @@ No segundo EP, o objetivo foi desenvolver um sistema simplificado de gestão uni
 
 ---
 
-### 🗂️ Estruturas de Dados Utilizadas
+### Estruturas de Dados Utilizadas
 
 * **`TURMA`:** Representa uma oferta de disciplina, contendo código, nome, número total de vagas, arranjo dinâmico de NUSP dos alunos matriculados, dia da semana e período (Manhã, Tarde ou Noite).
 * **`DESEMPENHO`:** Registra a situação de um aluno em uma turma específica, armazenando a nota (0 a 100), frequência (0 a 100) e o status (`'M'` para Matriculado, `'A'` para Aprovado ou `'R'` para Reprovado).
